@@ -15,5 +15,6 @@ orig image -> downsize to 416x416 -> yolov5 to label counting square -> crop ori
   * Currently only runs from anaconda prompt, something to do with torchvision, haven't figured out how to run in command prompt 
   * Labels: could add trypan blue dead cell detection, detection of abnormal shapes, clumps, ect 
   
+## Example labels
 ![Cells!](readme_imgs/4_results.jpg)
 
