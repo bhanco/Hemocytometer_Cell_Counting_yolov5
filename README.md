@@ -4,8 +4,13 @@ Automated Cell Counting from mobile camera
 ## Rational
 My lab needs cell counts for CyTOF and other assays. We generally use our MACSQuannt flow cytometer for cell counts. However, it sometimes breaks, or may be in use. In this case we manually count using a hemocytometer and microscope. As a fun side project, I've worked on automating this for speed, particulalry useful with many samples. 
 
-## Function
-Input picture taken from mobile device through microscope eye piece, output cell counts
+## Methods Rundown 
+ * Thawed mouse spleen cells
+ * Serial dillutions
+ * Loaded hemocytometer
+ * Took iPhone pictures through microscope eye piece
+ * Labeled using [Roboflow](https://roboflow.com)
+ * Trained with [Google Collab](https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb)  
 
 ## Pipeline
 orig image -> downsize to 416x416 -> yolov5 to label counting square -> crop original image to counting square -> downsize 1024x1024 -> yolov5 to count cells
